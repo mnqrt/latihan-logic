@@ -4,9 +4,14 @@ import "fmt"
 
 func No1(n int) (arr []int) {
 	fmt.Printf("This is no #%d\n", 1)
+	cur := 1
+	prev := 0;
 	arr = make([]int, n)
 	for i := 0; i < n; i++ {
-		arr[i] = 2 * i + 1;
+		arr[i] = cur
+		new := cur + prev
+		prev = cur
+		cur = new
 	}
 	return
 }
