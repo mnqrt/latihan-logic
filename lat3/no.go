@@ -355,21 +355,3 @@ func No14(n int) [][]int {
 
 	return result
 }
-
-// 0 1 
-
-// cur = 0
-// prev = 1
-// new = 1+0 = 1
-
-// cur = 1
-// prev = 1
-// new = 1+1 = 2 
-
-// cur = 2
-// prev = 1
-// new = 2+1 = 3
-
-
-//fi = fi-1 + fi-2
-//
